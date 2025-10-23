@@ -4,8 +4,8 @@ function EmployeeInfo (name,age)
     console.log ("welcome"+ name + "your age is" + age)
 }
 
-name= "Kajana"
-age= "22"
+ var name= "Kajana"
+var age= "22"
 
 // defination of the function EmployeeInfo 
 function EmployeeInfo(name,age) 
