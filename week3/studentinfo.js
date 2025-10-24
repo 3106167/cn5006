@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const dateofBirth= "12/12/1980" 
 const getStudentName = () => 
 {
@@ -17,3 +18,6 @@ if (marks>50 && marks <70) return ("B grade")
 else 
 return ("A grade)")
 }
+=======
+
+>>>>>>> dd3b9a4610be6c77740f54ff6aee137e9d9c36f5
