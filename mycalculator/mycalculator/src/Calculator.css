@@ -3,48 +3,83 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Ensures it centers vertically on full screen */
+  min-height: 100vh;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .Calculator {
-  background-color: #333; /* Added a dark background to the calculator body */
-  width: 400px;
-  /* Removed fixed height to accommodate the new buttons and image dynamically */
-  min-height: 300px; 
-  position: relative;
-  margin: 25px;
-  padding-bottom: 20px;
-  border-radius: 10px; /* Rounded corners look nicer */
+  background-color: #333;
+  width: 350px; 
+  min-height: 450px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keypad-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .ButtonStyle {
   background-color: #0997f5;
-  border: 1px solid #06609e; /* Fixed: 'border: 4' is invalid CSS, needs unit and style */
+  border: 1px solid #06609e;
   color: white;
   height: 60px;
-  width: 60px;
+  width: 60px; 
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px; /* Adjusted font size to fit "Show Me" */
+  font-size: 20px;
   cursor: pointer;
-  margin: 2px; /* Added margin so buttons don't fuse together */
+  border-radius: 5px;
+  
+}
+
+.ButtonStyle:hover {
+  background-color: #077bc4;
+}
+
+
+.bottom-row .ButtonStyle {
+    width: 130px; 
 }
 
 .screen-row {
-    text-align: center;
-    margin-bottom: 10px;
-    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .screen-row input {
-  width: 300px; /* Widened slightly */
-  height: 30px;
+  width: 90%; 
+  height: 50px;
   background: rgb(255, 255, 255);
-  border: 1px solid #ccc;
+  border: none;
+  border-radius: 5px;
   color: black;
-  padding: 10px;
+  padding: 5px 10px;
   text-align: right;
-  font-size: 20px;
+  font-size: 28px;
+  box-sizing: border-box; 
+}
+
+.image-container {
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
 }
