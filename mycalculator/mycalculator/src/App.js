@@ -1,5 +1,5 @@
 import React from 'react';
-import KeyPadComponent from '../../mycalculator/mycalculator/src/Calculator';
+import KeyPadComponent from './Calculator';
 
 function App() {
   return (
